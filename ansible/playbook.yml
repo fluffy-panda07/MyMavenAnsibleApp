@@ -8,6 +8,7 @@
       copy:
         src: "/var/snap/jenkins/5042/workspace/MyMavenAnsibleApp/target/MyMavenAnsibleApp.war"
         dest: "/opt/tomcat/webapps/MyMavenAnsibleApp.war"
+        remote_src: yes
 
     - name: Restart Tomcat
       shell: |
