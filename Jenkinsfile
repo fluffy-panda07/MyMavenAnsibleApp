@@ -9,7 +9,8 @@ pipeline{
 	stages{
 		stage('Checkout'){
 			steps{  
-			git branch: 'master' ,url='https://github.com/fluffy-panda07/MyMavenAnsibleApp.git'}
+			git branch: 'master',
+				url:'https://github.com/fluffy-panda07/MyMavenAnsibleApp.git' }
 			}
 		stage('Build'){
 			steps{ sh 'mvn clean install' }
